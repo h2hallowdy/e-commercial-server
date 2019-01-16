@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+.support-bar {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.support-bar .icon-wrapper {
+    flex-grow: 4;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.support-bar .icon-wrapper a{
+    text-decoration: none;
+    padding: 10px;
+    color: #F5f5f5;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+.support-bar .icon-wrapper a:hover{
+    transform: scale(0.9);
+}
+
+
+
+@media (max-width: 992px) {
+    .support-bar {
+        display: block;
+    }
+}

@@ -1,0 +1,32 @@
+
+.product-container a {
+    display: block;
+    color: #777;
+    text-decoration: none;
+    text-align: center;
+}
+.product-container a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+.product-container a:hover img {
+    transform: scale(1.1);
+}
+
+.product-container a:hover {
+    color: #3aa4ff;
+    text-decoration: none;
+}
+
+.product-container .feature-product .product-text .product-title {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-container .feature-product .product-text .product-price {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}

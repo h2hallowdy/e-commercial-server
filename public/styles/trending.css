@@ -1,0 +1,135 @@
+
+.trending-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.trending-box .title-box {
+    flex-grow: 1;
+    width: 600px;
+    padding: 2rem;
+
+    background-color: rgb(20, 19, 19);
+    color: #FFF;
+    line-height: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.trending-box .title-box .text {
+    margin: 0;
+    margin-bottom: .6rem;
+    
+}
+.trending-box .title-box .text-sub {
+    font-size: 14px;
+}
+.trending-box .image-box {
+    width: 600px;
+    
+    overflow: hidden;
+    
+    background-position: center;
+    background-size: cover;
+}
+.trending-box .title-box a {
+    text-decoration: none;
+    background-color: black;
+    color: #FFF;
+    display: block;
+    width: 120px;
+    height: 35px;
+    margin: 2rem 0;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    
+}
+.btn {
+    width: 100%;
+    height: 100%;
+    /* width: 120px;
+    height: 35px;
+    padding: 6px;
+    margin: 2rem 0 0 0;
+    
+    border: 1px solid rgba(255, 255, 255, 0.9); */
+    /* border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.9); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.btn::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    border-radius: 4px;
+    background-color: rgb(248, 248, 248);
+    visibility: hidden;
+    z-index: -1;
+    
+}
+
+.trending-box .title-box a:hover .btn::after {
+  
+    transform: translateY(-100%);
+    visibility: visible;
+    transition: all ease 300ms;
+    
+}
+.trending-box .title-box a:hover .btn {
+    color: #000;
+}
+
+@media (max-width: 992px) { 
+    .trending-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trending-box .title-box {
+        width: 600px;
+        padding: 0;
+        padding-top: 20px;
+        border-radius: 0;
+    }
+    .trending-box .title-box .text-box {
+        text-align: center;
+    }
+    .trending-box .image-box {
+        width: 600px;
+        height: 350px;
+        overflow: hidden;
+    
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+   
+
+}
+
+.fab {
+    font-size: 20px;
+}
+
+.bg-red {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.t-b {
+    color: black;
+}
+
+
+.trending-box .gradient-bg {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}

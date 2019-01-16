@@ -1,0 +1,161 @@
+
+#menu {
+    display: flex;
+    background-color: black;
+    color: #FFF;
+    align-items: center;
+    padding: 18px 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    transition: all ease 450ms;
+    z-index: 1000;
+}
+
+#menu .logo h1 {
+    margin: 0;
+}
+
+#menu.minimize {
+    padding: 8px 22px;
+    background-color: #444;
+}
+
+#menu .list {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+#menu .list .item {
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+#menu .list .item a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+    transition: all ease 300ms;
+}
+
+#menu .list .item a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+#toggle {
+    position: absolute;
+    right: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+.one, .two, .three {
+    background-color: #FFF;
+    height: 5px;
+    margin: 4px 0;
+    border-radius: 5px;
+    transition: all ease 200ms;
+}
+.one {
+    width: 30px;
+}
+
+.two {
+    width: 20px;
+}
+
+.three {
+    width: 25px;
+}
+
+#toggle:hover .two { width: 30px; }
+#toggle:hover .three { width: 30px; }
+
+
+@media (max-width: 992px) { 
+    #toggle {
+        display: block;
+    }
+    #menu .list {
+        position: absolute;
+        background-color: inherit;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        padding: .6rem 0;
+        transform-origin: 50% 0%;
+        transform: scaleY(0);
+        transition: all ease-out 250ms;
+    }
+    #menu .list.active {
+        transform: scaleY(1);
+    }
+    #menu .list .item{
+        display: block;
+        text-align: center;
+    }
+
+    #menu .list .item a {
+        display: block;
+        transition: all ease-out 250ms;
+    }
+
+    #menu .list .dropdown-item .product-dropdown {
+        display: none;
+    }
+    #menu .list .dropdown-item:hover .product-dropdown {
+        display: none;
+    }
+}
+
+#menu .product-dropdown {
+    position: absolute;
+    top: 230%;
+    right: -60px;
+    border-top: 3px solid tomato;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    width: 200px;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(0);
+    transition: all ease 200ms;
+}
+
+#menu .product-dropdown .drop-product {
+    /* padding: 10px 4px; */
+    transition: 120ms ease;
+}
+#menu .product-dropdown .drop-product a {
+    display: block;
+    color: #000;
+}
+
+#menu .product-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    border-bottom-color: white;
+}
+
+
+#menu .drop-product:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+#menu .list .dropdown-item:hover .product-dropdown {
+    transform: scale(1);
+}
+
