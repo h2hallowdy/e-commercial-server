@@ -1,8 +1,7 @@
 const express = require('express');
 var router =express.Router();
 
-router.get('/:category', function(req, res) {
-    res.render('categories/index');
-});
+var controller = require('../controllers/category.controller');
+router.get('/:category', controller.index);
 
 module.exports = router;
