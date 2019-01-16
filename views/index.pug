@@ -1,1 +1,239 @@
-h2 Home
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title ROTEX PAINT
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css?family=Dosis:600', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Kodchasan', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Permanent+Marker', rel='stylesheet')
+  link(rel='stylesheet', type='text/css', media='screen', href='./styles/style.menu.css')
+  link(rel='stylesheet', href='./styles/style.css')
+  link(rel='stylesheet', href='./styles/slide.show.css')
+  link(rel='stylesheet', href='./styles/feature.product.css')
+  link(rel='stylesheet', href='./styles/trending.css')
+  link(rel='stylesheet', href='./styles/support.bar.css')
+  link(rel='stylesheet', href='./styles/footer.css')
+  script(src='./stylesJS/slide.show.js')
+  script(src='./stylesJS/menu.bar.js')
+  script(src='./stylesJS/main.js')
+
+.menu-bar
+  nav#menu
+    .logo
+      h1 ROTEX PAINT
+    #toggle
+      .one
+      .two
+      .three
+    ul.list
+      li.item
+        a(href='/') TRANG CHỦ
+      li.item.dropdown-item
+        a(href='/products') SẢN PHẨM
+        ul.product-dropdown
+          li.drop-product
+           a(href='/category/Son') Sơn
+          li.drop-product
+           a(href='/category/BotTretTuong') Bột trét tường
+        //-   li.drop-product Sony
+        //-   li.drop-product Others
+      li.item
+        a(href='#color') MÀU SẮC
+      li.item
+        a(href='#about-us') VỀ CHÚNG TÔI
+        //- ul.product-dropdown
+        //-   li.drop-product Authors
+        //-   li.drop-product Coders.Tokyo
+      li.item
+        a(href='#contact') LIÊN HỆ
+.slide-show
+  .wrapper
+    i.fas.fa-angle-left.left-arrow
+    .slide-box
+      .slide.active(style="background-image: url('./images/abirchcreekinn-paint.jpg')")
+        a.infor(href='/category/Son') Sơn trang trí
+      .slide(style="background-image: url('https://via.placeholder.com/1000')")
+        a.infor(href='/category/BotTretTuong') Bột trét tường
+      .slide(style="background-image: url('./images/services.jpg')")
+        a.infor(href='#') Dịch vụ
+    i.fas.fa-angle-right.right-arrow
+    .dot-box
+      i.fas.fa-dot-circle.dot.active
+      i.fas.fa-dot-circle.dot
+      i.fas.fa-dot-circle.dot
+hr
+.title-block
+  h2 Sản phẩm nổi bật
+.container-feature
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/1b609ab2913772692b26.jpg')
+        .product-text
+          .product-title Sơn KENMAX
+          .product-price
+            | 400.000
+            sup VNĐ
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/2a4878af732a9074c93b.jpg')
+        .product-text
+          .product-title Sơn ROMAX
+          .product-price
+            | 500.000
+            sup VNĐ
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/2a4878af732a9074c93b.jpg')
+        .product-text
+          .product-title Sơn ROMAX
+          .product-price
+            | 500.000
+            sup VNĐ
+hr
+.title-block
+  h2 Sản phẩm mới
+//-   a(href='#') See all &gt;
+.container-feature
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/2a4878af732a9074c93b.jpg')
+        .product-text
+          .product-title Sơn ROMAX&apos;D2
+          .product-price
+            | 16.01.19
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/2a4878af732a9074c93b.jpg')
+        .product-text
+          .product-title Sơn ROMAX
+          .product-price
+            | 16.01.19
+  .col-md-4
+    .product-container
+      a.feature-product(href='#')
+        img(src='./images/2a4878af732a9074c93b.jpg')
+        .product-text
+          .product-title Sơn ROMAX
+          .product-price
+            | 16.01.19
+hr#color
+.trendings-container
+  .trending-box
+    .title-box.border-left
+      .text-box
+        h1.text MÃ MÀU
+        .text.text-sub
+          p Chọn lựa và tìm kiếm mã màu phù hợp. Bạn có thể thoải mái trải nghiệm những phong cách phối màu hiện đại nhất.
+      a(href='#')
+        .btn
+          | CHỌN NGAY
+      a(href='#')
+        .btn.bg-red.t-w
+          | TƯ VẤN
+        //-   | TƯ VẤN &nbsp; 
+        //-   i.fab.fa-apple
+    .image-box.border-right(style="background-image: url('./images/ca8326df2e5acd04944b.jpg')")
+hr#about-us
+.trendings-container
+  .trending-box
+    .image-box(style="background-image: url('https://via.placeholder.com/1000')")
+    .title-box.gradient-bg.border-right
+      .text-box
+        h1.text.t-b VỀ CHÚNG TÔI
+        .text.text-sub.t-b
+          p
+           strong ROTEX
+           |  n&#x1ED9;i th&#x1EA5;t l&agrave; lo&#x1EA1;i s&#x1A1;n n&#x1B0;&#x1EDB;c 100% Acrylic t&iacute;nh n&abreve;ng cao, &dstrok;&#x1B0;&#x1EE3;c s&#x1EA3;n xu&#x1EA5;t theo c&ocirc;ng ngh&#x1EC7; ti&ecirc;n ti&#x1EBF;n nh&#x1EA5;t
+          p
+           | S&#x1A1;n 
+           strong ROTEX
+           |  th&#x1ECF;a m&atilde;n m&#x1ECD;i nhu c&#x1EA7;u trang tr&iacute; trong ng&agrave;nh x&acirc;y d&#x1EF1;ng
+          p
+           | S&#x1EA3;n ph&#x1EA9;m &dstrok;&#x1EA1;t ch&#x1EA5;t l&#x1B0;&#x1EE3;ng cao, d&#x1EC5; lau ch&ugrave;i, c&oacute; uy t&iacute;n tr&ecirc;n th&#x1ECB; tr&#x1B0;&#x1EDD;ng, &dstrok;&#x1B0;&#x1EE3;c kh&aacute;ch h&agrave;ng tin t&#x1B0;&#x1EDF;ng
+
+      a(href='#')
+        .btn.bg-red.t-w
+          | TÌM HIỂU
+hr
+.support-bar-container
+  .support-bar
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-comments.fa-4x
+      p.t-w HỖ TRỢ
+    .icon-wrapper
+      a(href='/products')
+        .icon
+          i.fas.fa-shopping-cart.fa-4x
+      p.t-w MUA NGAY
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-sync-alt.fa-4x
+      p.t-w NÂNG CẤP
+    .icon-wrapper
+      a(href='#')
+        .icon
+          i.fas.fa-wrench.fa-4x
+      p.t-w DỊCH VỤ &amp; BẢO HÀNH
+.footer
+  .footer-container
+hr
+.footer-container
+  .page-title
+    h1 ROTEX PAINT
+    p Find your color
+    p Find your soul
+  .footer-menu
+    .menu-footer
+      h2 Sản phẩm
+      ul.list-menu
+        li.item-menu
+          a(href='/category/Son') SƠN
+        li.item-menu
+          a(href='/category/BotTretTuong') BỘT TRÉT TƯỜNG
+        //- li.item-menu
+        //-   a(href='#') SPEAKERS
+        //- li.item-menu
+        //-   a(href='#') ACCESSORIES
+        //- li.item-menu
+        //-   a(href='#') AUDIOs
+    .menu-footer
+      h2 Hỗ trợ
+      ul.list-menu
+        li.item-menu
+          a(href='#') HỖ TRỢ SẢN PHẨM
+        li.item-menu
+          a(href='#') DỊCH VỤ &amp; BẢO HÀNH
+        li.item-menu
+          a(href='#') NÂNG CẤP
+        li.item-menu
+          a(href='#') LIÊN LẠC VỚI CHÚNG TÔI
+    .menu-footer
+      #contact.contact-infor
+        | Contact us Via &nbsp;
+        a(href='https://www.facebook.com/h2hallowdy', target="_blank")
+          img(src='./images/facebook-logo-button.svg', alt='facebook', style='width: 20px;\
+          height:20px')
+        | &nbsp;  
+        a(href='#')
+          img(src='./images/instagram-logo.svg', alt='instagram', style='width: 20px;\
+          height:20px')
+        | &nbsp; 
+        a(href='https://coders.tokyo/', target="_blank")
+          img(src='./images/custom-css.svg', alt='instagram', style='width: 20px;\
+          height:20px')
+        | &nbsp;
+        
+.copy-right
+  p Design &copy; 2018 Hoang Nguyen. - From Coders.Tokyo and Intel
+.top-btn
+  i.fas.fa-chevron-up

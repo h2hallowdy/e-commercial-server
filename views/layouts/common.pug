@@ -1,0 +1,51 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title ROTEX PAINT
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css?family=Dosis:600', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Kodchasan', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Permanent+Marker', rel='stylesheet')
+  
+  link(rel='stylesheet', type='text/css', media='screen', href='../styles/style.menu.css')
+  link(rel='stylesheet', href='../styles/style.css')
+  link(rel='stylesheet', href='../styles/feature.product.css')
+  link(rel='stylesheet', href='../styles/trending.css')
+  link(rel='stylesheet', href='../styles/support.bar.css')
+  link(rel='stylesheet', href='../styles/footer.css')
+  script(src='../stylesJS/menu.bar.js')
+  script(src='../stylesJS/main.js')
+
+.menu-bar
+  nav#menu
+    .logo
+      h1 ROTEX PAINT
+    #toggle
+      .one
+      .two
+      .three
+    ul.list
+      li.item
+        a(href='/') TRANG CHỦ
+      li.item.dropdown-item
+        a(href='/products') SẢN PHẨM
+        ul.product-dropdown
+          li.drop-product
+           a(href='/category/Son') Sơn
+          li.drop-product
+           a(href='/category/BotTretTuong') Bột trét tường
+        //-   li.drop-product Sony
+        //-   li.drop-product Others
+      li.item
+        a(href='/#color') MÀU SẮC
+      li.item
+        a(href='/#about-us') VỀ CHÚNG TÔI
+        //- ul.product-dropdown
+        //-   li.drop-product Authors
+        //-   li.drop-product Coders.Tokyo
+      li.item
+        a(href='#') LIÊN HỆ
+.wrapper.pt-5
+ block content
