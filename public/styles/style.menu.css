@@ -48,6 +48,29 @@
 #menu .cart {
     margin-left: auto;
     margin-right: 60px;
+    color: white;
+    font-size: 1.4rem;
+    transition: all ease 300ms;
+}
+#menu .cart:hover {
+    animation: scaleAnimate 500ms;
+}
+@keyframes scaleAnimate {
+    0% {
+        transform: scale(1.25);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.75);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 #toggle {
     position: absolute;
@@ -112,6 +135,9 @@
     }
     #menu .list .dropdown-item:hover .product-dropdown {
         display: none;
+    }
+    #menu .cart {
+        margin-right: 80px;
     }
 }
 

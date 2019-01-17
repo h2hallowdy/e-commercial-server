@@ -48,7 +48,11 @@ head
         //-   li.drop-product Coders.Tokyo
       li.item
         a(href='#contact') LIÊN HỆ
-    a.cart CART
+    a.cart(href='/cart')
+      i.fas.fa-cart-plus
+        span &nbsp;
+        if carts
+          sup= carts.length
 .slide-show
   .wrapper
     i.fas.fa-angle-left.left-arrow
@@ -144,7 +148,7 @@ hr#color
 hr#about-us
 .trendings-container
   .trending-box
-    .image-box(style="background-image: url('https://via.placeholder.com/1000')")
+    .image-box.border-left(style="background-image: url('https://via.placeholder.com/1000')")
     .title-box.gradient-bg.border-right
       .text-box
         h1.text.t-b VỀ CHÚNG TÔI

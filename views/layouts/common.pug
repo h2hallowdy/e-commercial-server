@@ -47,5 +47,9 @@ head
         //-   li.drop-product Coders.Tokyo
       li.item
         a(href='#') LIÊN HỆ
+    a.cart(href='/cart')
+      i.fas.fa-cart-plus
+        span &nbsp;
+        sup= carts.length
 .wrapper.pt-5
  block content

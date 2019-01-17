@@ -12,7 +12,8 @@ block content
               h3= product.name
               p= product.price
             .buy
-              i.fas.fa-cart-plus
+              a(href='/cart/add/' + product.id)
+                i.fas.fa-cart-plus
       .inside
         .icon
           i.fas.fa-info
