@@ -1,8 +1,12 @@
+require('dotenv').config();
+
 const express = require('express');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
+mongoose.connect(process.env.MONGO_URL);
 
-const categoryRoute = require('./routes/category.route');
+const productsRoute = require('./routes/products.route');
 
 const port = 3000;
 const app = express();
@@ -19,7 +23,7 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.use('/category', categoryRoute);
+app.use('/products', productsRoute);
 
 app.listen(port, function() {
     console.log(`Server listening to port ${port}`)

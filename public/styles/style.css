@@ -84,3 +84,16 @@ hr {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
+.wrapper-grid-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 50px;
+}
+@media (max-width: 992px) {
+    .wrapper-grid-products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+}

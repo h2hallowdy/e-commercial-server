@@ -1,0 +1,40 @@
+extends ../layouts/common
+block content
+ h1 Sản phẩm
+ .wrapper-grid-products
+  each product in products
+    .product-wrapper
+      .container
+        .top(style=`background: url(${product.image}) no-repeat center center;`)
+        .bottom
+          .left
+            .details
+              h3= product.name
+              p= product.price
+            .buy
+              i.fas.fa-cart-plus
+      .inside
+        .icon
+          i.fas.fa-info
+        .contents
+          table
+            tr
+              th Tên sản phẩm
+            tr
+              td= product.name
+            tr
+              th Mô tả
+            tr
+              td= product.description
+            tr
+              th Nhãn 
+            tr
+              td= product.type
+            tr
+              th Loại sản phẩm
+            tr
+              td= product.category
+                  
+
+  .top-btn
+    i.fas.fa-chevron-up
