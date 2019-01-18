@@ -2,9 +2,8 @@ var mongoose = require('mongoose');
 
 var sessionSchema = new mongoose.Schema({
     sessionName: String,
-    cart: [
-
-    ]
+    cart: [],
+    totalQty: Number
 });
 
 var Session = mongoose.model('Session', sessionSchema, 'sessions');

@@ -4,10 +4,10 @@ module.exports.index = function(req, res) {
     var sessionId = req.signedCookies.sessionId;
     Product.find().then(function(products) {
         Session.find({ sessionName: sessionId }).then(function(sessions) {
-            console.log(sessions[0].cart);
+            var sessions = sessions[0] ? sessions[0] : [];
             res.render('products/index', {
                 products: products,
-                carts: sessions[0].cart
+                carts: sessions
             });
         });
         
@@ -19,9 +19,10 @@ module.exports.category = function(req, res) {
     const category = req.params.category;
     Product.find({ category: category }).then(function(products) {
         Session.find({ sessionName: sessionId }).then(function(sessions) {
+            var sessions = sessions[0] ? sessions[0] : [];
             res.render('products/index', {
                 products: products,
-                carts: sessions[0].cart
+                carts: sessions
             });
         });
     })

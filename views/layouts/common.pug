@@ -50,6 +50,7 @@ head
     a.cart(href='/cart')
       i.fas.fa-cart-plus
         span &nbsp;
-        sup= carts.length
+        if carts
+          sup= carts.totalQty
 .wrapper.pt-5
  block content

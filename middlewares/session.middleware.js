@@ -9,7 +9,8 @@ module.exports = function(req, res, next) {
         });
         var session = new Session({
             sessionName: sessionId,
-            cart: []
+            cart: [],
+            totalQty: 0
         });
         session.save(function(err, session) {
             if(err) return console.log(err);

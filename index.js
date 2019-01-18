@@ -31,8 +31,9 @@ app.get('/', function(req, res) {
         return;
     }
     Session.find({ sessionName: sessionId }).then(function(sessions) {
+        var sessions = sessions[0] ? sessions[0] : [];
         res.render('index', {
-            carts: sessions[0].cart
+            carts: sessions
         });
     })
 });
