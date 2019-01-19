@@ -34,9 +34,9 @@ head
         a(href='/products') SẢN PHẨM
         ul.product-dropdown
           li.drop-product
-           a(href='/products/Son') Sơn
+           a(href='/products?category=Son') Sơn
           li.drop-product
-           a(href='/products/BotTretTuong') Bột trét tường
+           a(href='/products?category=BotTretTuong') Bột trét tường
         //-   li.drop-product Sony
         //-   li.drop-product Others
       li.item
@@ -47,7 +47,7 @@ head
         //-   li.drop-product Authors
         //-   li.drop-product Coders.Tokyo
       li.item
-        a(href='#contact') LIÊN HỆ
+        a(href='/contact') LIÊN HỆ
     a.cart(href='/cart')
       i.fas.fa-cart-plus
         span &nbsp;
@@ -62,7 +62,7 @@ head
       .slide(style="background-image: url('https://via.placeholder.com/1000')")
         a.infor(href='/products?category=BotTretTuong') Bột trét tường
       .slide(style="background-image: url('./images/services.jpg')")
-        a.infor(href='#') Dịch vụ
+        a.infor(href='/service') Dịch vụ
     i.fas.fa-angle-right.right-arrow
     .dot-box
       i.fas.fa-dot-circle.dot.active
@@ -136,10 +136,10 @@ hr#color
         h1.text MÃ MÀU
         .text.text-sub
           p Chọn lựa và tìm kiếm mã màu phù hợp. Bạn có thể thoải mái trải nghiệm những phong cách phối màu hiện đại nhất.
-      a(href='#')
+      a(href='/color')
         .btn
           | CHỌN NGAY
-      a(href='#')
+      a(href='/service')
         .btn.bg-red.t-w
           | TƯ VẤN
         //-   | TƯ VẤN &nbsp; 
@@ -163,14 +163,14 @@ hr#about-us
           p
            | S&#x1EA3;n ph&#x1EA9;m &dstrok;&#x1EA1;t ch&#x1EA5;t l&#x1B0;&#x1EE3;ng cao, d&#x1EC5; lau ch&ugrave;i, c&oacute; uy t&iacute;n tr&ecirc;n th&#x1ECB; tr&#x1B0;&#x1EDD;ng, &dstrok;&#x1B0;&#x1EE3;c kh&aacute;ch h&agrave;ng tin t&#x1B0;&#x1EDF;ng
 
-      a(href='#')
+      a(href='/about')
         .btn.bg-red.t-w
           | TÌM HIỂU
 hr
 .support-bar-container
   .support-bar
     .icon-wrapper
-      a(href='#')
+      a(href='/service')
         .icon
           i.fas.fa-comments.fa-4x
       p.t-w HỖ TRỢ
@@ -180,12 +180,12 @@ hr
           i.fas.fa-shopping-cart.fa-4x
       p.t-w MUA NGAY
     .icon-wrapper
-      a(href='#')
+      a(href='/service')
         .icon
           i.fas.fa-sync-alt.fa-4x
       p.t-w NÂNG CẤP
     .icon-wrapper
-      a(href='#')
+      a(href='/service')
         .icon
           i.fas.fa-wrench.fa-4x
       p.t-w DỊCH VỤ &amp; BẢO HÀNH
@@ -215,13 +215,13 @@ hr
       h2 Hỗ trợ
       ul.list-menu
         li.item-menu
-          a(href='#') HỖ TRỢ SẢN PHẨM
+          a(href='/service') HỖ TRỢ SẢN PHẨM
         li.item-menu
-          a(href='#') DỊCH VỤ &amp; BẢO HÀNH
+          a(href='/service') DỊCH VỤ &amp; BẢO HÀNH
         li.item-menu
-          a(href='#') NÂNG CẤP
+          a(href='/service') NÂNG CẤP
         li.item-menu
-          a(href='#') LIÊN LẠC VỚI CHÚNG TÔI
+          a(href='/contact') LIÊN LẠC VỚI CHÚNG TÔI
     .menu-footer
       #contact.contact-infor
         | Contact us Via &nbsp;

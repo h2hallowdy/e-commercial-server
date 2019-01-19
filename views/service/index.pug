@@ -1,0 +1,25 @@
+extends ../layouts/common.pug 
+
+block content
+ h2.title-page DỊCH VỤ
+ .container-color
+  p Mọi thắc mắc về sản phẩm, dịch vụ & bảo hành hay muốn nâng cấp cho ngôi nhà của các bạn. Hãy đặt câu hỏi ngay cho chúng tôi hôm nay
+  if submit
+   p(style='color: green')= submit.message
+  form(action='/service', method='POST')
+    .input-group
+        input#name(type='text', name='name', required='')
+        label(for='name') Tên
+    .input-group
+        input#phone(type='text', name='phone', required='')
+        label(for='phone') Số điện thoại
+    .input-group
+        input#email(type='text', name='email', required='')
+        label(for='email') Email
+    .input-group
+        textarea#note(name='note', required='', placeholder="Hãy ghi câu hỏi của bạn tại đây...")  
+        
+    small *Hãy ghi câu hỏi của bạn
+    button(type='submit') Gửi ngay
+ .top-btn
+  i.fas.fa-chevron-up

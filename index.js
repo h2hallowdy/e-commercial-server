@@ -9,6 +9,7 @@ mongoose.connect(process.env.MONGO_URL);
 
 const productsRoute = require('./routes/products.route');
 const cartRoute = require('./routes/cart.route');
+const serviceRoute = require('./routes/service.route');
 var sessionMiddleware = require('./middlewares/session.middleware');
 const port = 3000;
 const app = express();
@@ -38,9 +39,20 @@ app.get('/', function(req, res) {
         });
     })
 });
+app.get('/color', function(req, res) {
+    res.render('color');
+});
+
+app.get('/about', function(req, res) {
+    res.render('about');
+});
+app.get('/contact', function(req, res) {
+    res.render('contact');
+})
 
 app.use('/products', productsRoute);
 app.use('/cart', cartRoute);
+app.use('/service', serviceRoute);
 
 app.listen(port, function() {
     console.log(`Server listening to port ${port}`)
