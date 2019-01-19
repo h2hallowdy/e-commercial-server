@@ -1,0 +1,29 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title THANH TO&Aacute;N
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+  link(rel='stylesheet', type='text/css', href='../styles/charge.form.css')
+form(action='/cart/submit', method='POST')
+  h2 ROTEX PAINT
+  .input-group
+    input#name(type='text', name='name', required='')
+    label(for='name') Tên
+  .input-group
+    input#phone(type='text', name='phone', required='')
+    label(for='phone') Số điện thoại
+  .input-group
+    input#email(type='text', name='email', required='')
+    label(for='email') Email
+  .input-group
+    input#address(type='text', name='address', required='')
+    label(for='address') Địa chỉ
+  .input-group
+    input#note(type='text', name='note', required='')
+    label(for='note') Ghi chú thêm
+  button(type='submit') Đặt hàng
+  p
+    | Vẫn còn muốn mua sắm? &nbsp;
+    a(href='/products') Sản phẩm

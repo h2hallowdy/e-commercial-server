@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+.product-charge {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.product-charge .number {
+    padding: 0.5rem 1rem; 
+    font-size: 1.4rem; 
+    color: dodgerblue;
+    
+}
+
+.product-charge .info {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.product-charge .info span {
+    padding: 0.5rem 1rem;
+}
+
+.product-charge .quantity {
+    margin-left: auto;
+    margin-right: 3rem;
+}
+.charge-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total-price {
+    margin-top: 1rem;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.btn-custom {
+    font-family: 'Roboto', sans-serif;
+    min-width: 60px;
+    max-width: 80px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    padding: 8px 16px;
+    background: none;
+    color: #37474f;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #37474f;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-custom::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #37474f;
+    z-index: -1;
+    opacity: 0;
+    transform: scale3d(0.7, 1, 1);
+    transition: transform 0.4s, opacity 0.4s;
+  }
+  
+  .btn-custom:hover {
+      color: #fff;
+      border-color: #37474f;
+  }
+  
+  .btn-custom:hover::before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+  

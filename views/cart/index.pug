@@ -1,0 +1,20 @@
+extends ../layouts/common
+block append head
+ link(rel='stylesheet', href='../styles/cart.charge.css')
+block content
+ h1 CART
+ each item, index in items
+  .product-charge
+   span.number= index + 1
+   img(src='https://via.placeholder.com/150')
+   .info
+    span= item.name
+    span= item.price
+   .quantity
+    span= `Số lượng: ${item.qty}`
+ .charge-container
+  .total-price
+   span= `Tổng giá: ${session.totalPrice}`
+  a.btn-custom(href="/cart/charge") Đặt hàng
+ .top-btn
+  i.fas.fa-chevron-up

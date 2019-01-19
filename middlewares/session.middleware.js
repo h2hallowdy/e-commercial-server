@@ -10,7 +10,8 @@ module.exports = function(req, res, next) {
         var session = new Session({
             sessionName: sessionId,
             cart: [],
-            totalQty: 0
+            totalQty: 0,
+            totalPrice: 0
         });
         session.save(function(err, session) {
             if(err) return console.log(err);

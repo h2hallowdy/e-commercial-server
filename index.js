@@ -20,8 +20,9 @@ app.set('views', './views');
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(cookieParser(process.env.SESSION_SECRET));
-app.use(express.static('public'));
 app.use(sessionMiddleware);
+app.use(express.static('public'));
+
 // Home page
 var Session = require('./models/session.model');
 app.get('/', function(req, res) {
