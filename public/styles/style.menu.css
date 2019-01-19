@@ -1,5 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
 #menu {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     background-color: black;
     color: #FFF;
@@ -18,7 +19,14 @@
 
 #menu.minimize {
     padding: 8px 22px;
-    background-color: #444;
+    background-color: #F5f5f5;
+    color: #444;
+}
+#menu.minimize .list .item a{
+    color: #444;
+}
+#menu.minimize a {
+    color: #444;
 }
 
 #menu .list {
