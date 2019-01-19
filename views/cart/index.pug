@@ -15,6 +15,7 @@ block content
  .charge-container
   .total-price
    span= `Tổng giá: ${session.totalPrice}`
-  a.btn-custom(href="/cart/charge") Đặt hàng
+  if items.length != 0
+   a.btn-custom(href="/cart/charge") Đặt hàng
  .top-btn
   i.fas.fa-chevron-up

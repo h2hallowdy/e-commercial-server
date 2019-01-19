@@ -34,9 +34,9 @@ head
         a(href='/products') SẢN PHẨM
         ul.product-dropdown
           li.drop-product
-           a(href='/products/Son') Sơn
+           a(href='/products?category=Son') Sơn
           li.drop-product
-           a(href='/products/BotTretTuong') Bột trét tường
+           a(href='/products?category=BotTretTuong') Bột trét tường
         //-   li.drop-product Sony
         //-   li.drop-product Others
       li.item
@@ -55,3 +55,54 @@ head
           sup= carts.totalQty
 .wrapper.pt-5
  block content
+.footer
+  .footer-container
+hr
+.footer-container
+  .page-title
+    h1 ROTEX PAINT
+    p Find your color
+    p Find your soul
+  .footer-menu
+    .menu-footer
+      h2 Sản phẩm
+      ul.list-menu
+        li.item-menu
+          a(href='/products?category=Son') SƠN
+        li.item-menu
+          a(href='/products?category=BotTretTuong') BỘT TRÉT TƯỜNG
+        //- li.item-menu
+        //-   a(href='#') SPEAKERS
+        //- li.item-menu
+        //-   a(href='#') ACCESSORIES
+        //- li.item-menu
+        //-   a(href='#') AUDIOs
+    .menu-footer
+      h2 Hỗ trợ
+      ul.list-menu
+        li.item-menu
+          a(href='#') HỖ TRỢ SẢN PHẨM
+        li.item-menu
+          a(href='#') DỊCH VỤ &amp; BẢO HÀNH
+        li.item-menu
+          a(href='#') NÂNG CẤP
+        li.item-menu
+          a(href='#') LIÊN LẠC VỚI CHÚNG TÔI
+    .menu-footer
+      #contact.contact-infor
+        | Contact us Via &nbsp;
+        a(href='https://www.facebook.com/h2hallowdy', target="_blank")
+          img(src='./images/facebook-logo-button.svg', alt='facebook', style='width: 20px;\
+          height:20px')
+        | &nbsp;  
+        a(href='#')
+          img(src='./images/instagram-logo.svg', alt='instagram', style='width: 20px;\
+          height:20px')
+        | &nbsp; 
+        a(href='https://coders.tokyo/', target="_blank")
+          img(src='./images/custom-css.svg', alt='instagram', style='width: 20px;\
+          height:20px')
+        | &nbsp;
+        
+.copy-right
+  p Design &copy; 2018 Hoang Nguyen. - From Coders.Tokyo and Intel
