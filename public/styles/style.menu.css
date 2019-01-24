@@ -12,6 +12,10 @@
     transition: all ease 450ms;
     z-index: 1000;
 }
+#menu .logo .page-head-title {
+    text-decoration: none;
+    color: #FFF;
+}
 
 #menu .logo h1 {
     margin: 0;
@@ -25,8 +29,17 @@
 #menu.minimize .list .item a{
     color: #444;
 }
+#menu.minimize .list .item a:hover {
+    background-color: #dfdfdf;
+}
 #menu.minimize a {
     color: #444;
+}
+#menu.minimize .page-head-title {
+    color: #444;
+}
+#menu.minimize #toggle div{
+    background-color: #444;   
 }
 
 #menu .list {

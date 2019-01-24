@@ -11,7 +11,7 @@ module.exports = function(req, res, next) {
             sessionName: sessionId,
             cart: [],
             totalQty: 0,
-            totalPrice: 0
+            totalPrice: 'Liên hệ'
         });
         session.save(function(err, session) {
             if(err) return console.log(err);

@@ -47,7 +47,7 @@ module.exports.addToCart = async function (req, res, next) {
                 price: product.price
             };
             session.totalQty++;
-            session.totalPrice += parseInt(product.price);
+            // session.totalPrice += parseInt(product.price);
             session.cart.push(cart);
         }
         else {
@@ -55,7 +55,7 @@ module.exports.addToCart = async function (req, res, next) {
                 if (item.itemId === productId) {
                     item.qty++;
                     session.totalQty++;
-                    session.totalPrice += parseInt(product.price);
+                    // session.totalPrice += parseInt(product.price);
                 }
                 session.cart = [];
                 session.cart.push(...storedItem);
