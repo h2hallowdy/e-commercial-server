@@ -11,7 +11,7 @@ const productsRoute = require('./routes/products.route');
 const cartRoute = require('./routes/cart.route');
 const serviceRoute = require('./routes/service.route');
 var sessionMiddleware = require('./middlewares/session.middleware');
-const port = 3000;
+const port = 80;
 const app = express();
 
 

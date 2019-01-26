@@ -103,7 +103,7 @@ module.exports.chargePost = async function (req, res, next) {
     });
     const mailOptions = {
         from: 'RotexPaint.Service@gmail.com', // sender address
-        to: 'h2hallowdy@gmail.com', // list of receivers
+        to: 'Sonvanduc668@gmail.com', // list of receivers
         subject: 'Đặt hàng', // Subject line
         html: message// plain text body
     };

@@ -27,7 +27,7 @@ module.exports.service = function (req, res, next) {
     message += `<p>Câu hỏi: ${service.note}</p>`;
     const mailOptions = {
         from: 'RotexPaint.Service@gmail.com', // sender address
-        to: 'h2hallowdy@gmail.com', // list of receivers
+        to: 'Sonvanduc668@gmail.com', // list of receivers
         subject: 'Câu hỏi Dịch vụ', // Subject line
         html: message// plain text body
     };
